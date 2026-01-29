@@ -1,9 +1,9 @@
+import '../../assets/styles/style_Footer/Footer.css';
 
 export function Footer()
 {
     return(
-        <div id="footer" style={{display: 'flex', justifyContent: 'center', 
-          fontWeight: 'bold', width: '100%', height: '10vh', backgroundColor: 'white',  alignItems: 'center'}}>
+        <div className="Footer_">
             <p>&copy; 2026 - Creado y Diseñado por Benjamín, César y Paula</p>
         </div>
     );

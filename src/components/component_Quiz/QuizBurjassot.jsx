@@ -79,50 +79,53 @@ export default function QuizBurjassot()
   };
 
   return (
-    <div className="container">
-      <Header />
-      <div className="container_Qz">
-        <CuentaAtras 
-          onTiempoTerminado={manejarTiempoTerminado}
-          detener={juegoTerminado}
-        /> 
-      </div>
-      <div className="mainDiv">
-        <h1>Quiz Burjassot</h1>
-        
-        <div className="questionsDiv">
-          {!juegoTerminado ? (
-            <>
-              <h2 className="question">
-                {preguntas[preguntaActual].pregunta}
-              </h2>
-              
-              <div className="answerDiv">
-                {preguntas[preguntaActual].opciones.map((opcion, indice) => (
-                  <button
-                    key={indice}
-                    onClick={() => comprobarRespuesta(indice)}
-                    disabled={respuestaSeleccionada !== null}
-                    className={obtenerClaseBoton(indice)}
-                  >
-                    {opcion}
-                  </button>
-                ))}
+    <div>
+      <div className="container">
+        <Header />
+        <div className="container_Qz">
+          <CuentaAtras 
+            onTiempoTerminado={manejarTiempoTerminado}
+            detener={juegoTerminado}
+          /> 
+        </div>
+        <div className="mainDiv">
+          <h1>Quiz Burjassot</h1>
+          
+          <div className="questionsDiv">
+            {!juegoTerminado ? (
+              <>
+                <h2 className="question">
+                  {preguntas[preguntaActual].pregunta}
+                </h2>
+                
+                <div className="answerDiv">
+                  {preguntas[preguntaActual].opciones.map((opcion, indice) => (
+                    <button
+                      key={indice}
+                      onClick={() => comprobarRespuesta(indice)}
+                      disabled={respuestaSeleccionada !== null}
+                      className={obtenerClaseBoton(indice)}
+                    >
+                      {opcion}
+                    </button>
+                  ))}
+                </div>
+                
+                <button onClick={siguientePregunta} className="nextButton">
+                  Siguiente
+                </button>
+              </>
+            ) : (
+              <div className="result">
+                <h2>
+                  Juego terminado. Puntuación: {puntaje}/{preguntas.length}
+                </h2>
               </div>
-              
-              <button onClick={siguientePregunta} className="nextButton">
-                Siguiente
-              </button>
-            </>
-          ) : (
-            <div className="result">
-              <h2>
-                Juego terminado. Puntuación: {puntaje}/{preguntas.length}
-              </h2>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
