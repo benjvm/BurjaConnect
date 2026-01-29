@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../../assets/styles/style_Header/Header.css';
-import Both_Entrada from '../conmponent_Entradas/Both_Entrada';
 import {Link} from  'react-router'; 
 
-export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Header() 
+{
+    var [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => 
+    var toggleMenu = () => 
     {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -26,7 +26,7 @@ export default function Header() {
                     {/* MENÚ  */}
                     <nav className={`nav_container_header ${isMenuOpen ? 'active' : ''}`}>
                         <ul>
-                            <li><Link to="/Inicio">Inicio</Link></li>
+                            <li><Link to="/Pg">Inicio</Link></li>
                             <li><Link to="/QuizBurjassot">Conoce Burjassot</Link></li>
                             <li>Eventos</li>
                             <li>Preguntas Frecuentes</li>
@@ -57,8 +57,6 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-            <div className='div_header'></div>
-            <Both_Entrada />
         </div>
     );
 }

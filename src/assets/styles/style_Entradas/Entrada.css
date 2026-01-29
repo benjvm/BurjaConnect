@@ -26,6 +26,11 @@
     
 
 }
+.icono_entrada:hover 
+{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 .icono_circular_entrada
 {
     width: 250px;
@@ -35,10 +40,6 @@
     background-color: #ecf0f1;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     
-}
-.icono_circular_entrada:hover 
-{
-    transform: scale(1.2);
 }
 
 /*Titulo*/
