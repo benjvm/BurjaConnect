@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '../../assets/styles/style_Header/Header.css';
-import {Link} from  'react-router'; 
+import { Link } from 'react-router';
 
 export default function Header() 
 {
     var [isMenuOpen, setIsMenuOpen] = useState(false);
+    var [active, setActive] = useState('/');
 
-    var toggleMenu = () => 
-    {
+    var toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
@@ -19,15 +19,15 @@ export default function Header()
                     {/* LOGO */}
                     <div className='container_img_header'>
                         <a href="#" className="logo">
-                            <img src="./img/logo_.PNG" alt="Valencia" className='logo-img'/>
+                            <img src="./img/logo_.PNG" alt="Valencia" className='logo-img' />
                         </a>
                     </div>
 
                     {/* MENÚ  */}
                     <nav className={`nav_container_header ${isMenuOpen ? 'active' : ''}`}>
                         <ul>
-                            <li><Link to="/Pg">Inicio</Link></li>
-                            <li><Link to="/QuizBurjassot">Conoce Burjassot</Link></li>
+                            <li><Link to="/Pg" onClick={() => setActive('/Pg')}><span className={active === '/Pg' ? 'activo' : ''}>Inicio</span></Link></li>
+                            <li><Link to="/QuizBurjassot" onClick={() => setActive('/QuizBurjassot')}><span className={active === '/QuizBurjassot' ? 'activo' : ''}>Conoce Burjassot</span></Link></li>
                             <li>Eventos</li>
                             <li>Preguntas Frecuentes</li>
                             <li>Contacto</li>
