@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../../assets/styles/style_Header/Header.css';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
-export default function Header() 
-{
+export default function Header() {
     var [isMenuOpen, setIsMenuOpen] = useState(false);
     var [active, setActive] = useState('/');
+    var location = useLocation();
 
     var toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -26,9 +26,20 @@ export default function Header()
                     {/* MENÚ  */}
                     <nav className={`nav_container_header ${isMenuOpen ? 'active' : ''}`}>
                         <ul>
-                            <li><Link to="/Pg" onClick={() => setActive('/Pg')}><span className={active === '/Pg' ? 'activo' : ''}>Inicio</span></Link></li>
-                            <li><Link to="/QuizBurjassot" onClick={() => setActive('/QuizBurjassot')}><span className={active === '/QuizBurjassot' ? 'activo' : ''}>Conoce Burjassot</span></Link></li>
-                            <li>Eventos</li>
+                            <li>
+                                <Link to="/Pg">
+                                    <span className={location.pathname === '/Pg' ? 'activo' : ''}>
+                                        Inicio
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/QuizBurjassot">
+                                    <span className={location.pathname === '/QuizBurjassot' ? 'activo' : ''}>
+                                        Quiz Burjassot
+                                    </span>
+                                </Link>
+                            </li>
                             <li>Preguntas Frecuentes</li>
                             <li>Contacto</li>
                         </ul>

@@ -9,10 +9,11 @@ header
     z-index: 100; 
 }
 
-.activo{
-        color: black;
-        font-weight: bold;
-    }
+.activo
+{
+    color: black;
+    font-weight: bold;
+}
 
 .header-container 
 {
