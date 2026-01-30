@@ -9,4 +9,5 @@ Paula Llago
 NPM:     
 npm install @fullcalendar/react   
 npm install @fullcalendar/daygrid   
-npm install react-player   
+npm install react-player     
+npm install react-router-dom      
