@@ -5,7 +5,7 @@ Benjamín Sánchez
 César Marcillo
 Paula Llago
 
-## Extensiones necesarias para el correcto funcionamiento del proyecto
+## Dependencias necesarias para el correcto funcionamiento del proyecto
 NPM:     
 npm install @fullcalendar/react   
 npm install @fullcalendar/daygrid   
