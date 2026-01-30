@@ -26,19 +26,16 @@
   width: var(--fc-width);
 }
 
-/* Toolbar title */
 .my-calendar .fc-toolbar-title {
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-/* Buttons */
 .fc-button {
   border-radius: 15px;
   padding: 6px 12px;
 }
 
-/* Calendar container */
 .fc {
   background: rgb(252, 245, 238);
   border-radius: 12px;
@@ -46,7 +43,6 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* Events */
 .fc-event {
   border-radius: 6px;
   font-size: 0.85rem;
