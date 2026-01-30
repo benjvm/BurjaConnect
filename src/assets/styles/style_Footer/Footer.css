@@ -9,16 +9,12 @@
     background-color: white;
 }
 
-
 /*RESPONSIVE*/
 
 @media (max-width: 768px) 
 { 
-        .Footer 
+    .Footer_
     { 
-        height: auto;  
-        padding: 15px 10px; 
         text-align: center; 
-        
     } 
 }
