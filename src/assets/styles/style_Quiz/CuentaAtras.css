@@ -1,4 +1,5 @@
-.container_contador {
+.container_contador 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +7,8 @@
   font-family: Arial, sans-serif;
 }
 
-.card_contador {
+.card_contador 
+{
   background-color: white;
   border-radius: 20px;
   padding: 20px;
@@ -15,7 +17,8 @@
   min-width: 200px;
 }
 
-.display_contador {
+.display_contador 
+{
   border-radius: 15px;
   padding: 20px;
   margin: 20px 0;
@@ -23,11 +26,13 @@
   transition: background-color 0.3s;
 }
 
-.display_contador.tiempo_terminado_contador {
+.display_contador.tiempo_terminado_contador 
+{
   background-color: #dc3545;
 }
 
-.numero_contador {
+.numero_contador 
+{
   margin: 0;
   font-size: 2em;
   font-weight: bold;
@@ -35,11 +40,13 @@
   color: #007bff;
 }
 
-.tiempo_terminado_contador .numero_contador {
+.tiempo_terminado_contador .numero_contador 
+{
   color: white;
 }
 
-.mensaje_contador {
+.mensaje_contador 
+{
   margin: 10px 0 0 0;
   color: white;
   font-size: 1.2em;
@@ -47,6 +54,34 @@
 }
 
 /*RESPONSIVE */
+
+@media (min-width: 1025px) 
+{
+  .card_contador 
+  {
+    min-width: 300px; 
+    padding: 30px;
+  }
+  
+  .numero_contador 
+  {
+    font-size: 2.5em; 
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) 
+{
+  .card_contador 
+  {
+    min-width: 250px;
+    padding: 25px;
+  }
+
+  .numero_contador 
+  {
+    font-size: 2.2em;
+  }
+}
 
 @media (max-width: 768px) 
 {
@@ -84,6 +119,7 @@
   {
     padding: 15px;
     min-width: 150px;
+    width: 90%; 
   }
 
   .display_contador 
