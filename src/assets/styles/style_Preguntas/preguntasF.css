@@ -1,7 +1,3 @@
-*{
-  font-family: "Inter";
-}
-
 .preguntasDiv{
   display: flex;
   flex-direction: column;

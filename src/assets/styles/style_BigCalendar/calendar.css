@@ -32,13 +32,17 @@
 .calendar-large {
   --fc-width: 50%;
   --fc-cell-padding: 4px;
-  --fc-toolbar-padding: 8px;
+  --fc-toolbar-padding: 20px;
 
   --fc-title-size: 1.4rem;
   --fc-button-padding: 4px 10px;
   --fc-button-radius: 4px;
 
   --fc-event-font-size: 0.75rem;
+}
+
+.fc .fc-toolbar.fc-header-toolbar{
+  margin-bottom: 0px;
 }
 
 /* Estilo de calendario GRANDE */
@@ -49,7 +53,7 @@
 /* Toolbar */
 .calendar-large .fc-header-toolbar {
   padding: var(--fc-toolbar-padding);
-  margin-bottom: 8px;
+  background-color: #bfe6fa;
 }
 
 .calendar-large .fc-toolbar-title {

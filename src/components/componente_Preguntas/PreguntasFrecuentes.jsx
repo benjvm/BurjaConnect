@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "/src/assets/preguntasF.css";
+import "/src/assets/styles/style_Preguntas/preguntasF.css";
 
 export default function PreguntasFrecuentes({ pregunta, respuesta }) {
   const [isActive, setIsActive] = useState(false);

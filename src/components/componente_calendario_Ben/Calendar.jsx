@@ -1,6 +1,6 @@
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
-import "/src/assets/calendar.css";
+import "/src/assets/styles/style_BigCalendar/calendar.css";
 
 export default function CalendarView({ variant = "default" }) {
   return (
