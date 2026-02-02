@@ -9,7 +9,7 @@ export default function App()
     <BrowserRouter>
     <ScrollToTop />
       <Routes>
-          <Route path='/Pg' element={<Pg/>}/>
+          <Route path='/' element={<Pg/>}/>
           <Route path='/Pg' element={<Pg/>}/>
           <Route path='/QuizBurjassot' element={<QuizBurjassot/>}/>
       </Routes>
