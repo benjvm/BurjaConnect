@@ -1,0 +1,17 @@
+/* Font face para DM Sans de Google Fonts*/
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+/* Font family para todos los textos*/
+*
+{
+    font-family: 'DM Sans';
+}
+
+/* Margen 0 para el body */
+body
+{
+    margin: 0;
+}
