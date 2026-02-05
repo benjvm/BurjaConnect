@@ -29,7 +29,7 @@ export default function Header()
                             <li><Link to="/Pg">Inicio</Link></li>
                             <li><Link to="/QuizBurjassot">Conoce Burjassot</Link></li>
                             <li>Eventos</li>
-                            <li>Preguntas Frecuentes</li>
+                            <li><Link to="/PreguntasFrecuentes">Preguntas Frecuentes</Link></li>
                             <li>Contacto</li>
                         </ul>
                     </nav>
