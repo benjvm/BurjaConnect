@@ -24,7 +24,8 @@ export default function PreguntasFrecuentes({ pregunta, respuesta }) {
 export function PreguntasTitle() {
     return (
     <div className="title">
-        <h1>Preguntas Frecuentes</h1>
+        <h1>¿En que podemos ayudarte?</h1>
+        <p>Ve algunas de las preguntas frecuentes sobre Burjassot</p>
     </div>
     )
 }

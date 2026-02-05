@@ -1,9 +1,11 @@
 import PreguntasFrecuentes, {PreguntasTitle} from './PreguntasFrecuentes.jsx'
+import Header from '../component_Header/Header.jsx'
 
 export default function RenderPreguntas() {
 
   return (
     <div className="RenderPreguntas">
+        <Header/>
         <PreguntasTitle></PreguntasTitle>
         <PreguntasFrecuentes
             pregunta = "Como llegar a Burjassot? 🚈"
