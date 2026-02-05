@@ -1,0 +1,55 @@
+.container_contador 
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  font-family: Arial, sans-serif;
+}
+
+.card_contador 
+{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 200px;
+}
+
+.display_contador 
+{
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s;
+}
+
+.display_contador.tiempo_terminado_contador 
+{
+  background-color: #dc3545;
+}
+
+.numero_contador 
+{
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: monospace;
+  color: #007bff;
+}
+
+.tiempo_terminado_contador .numero_contador 
+{
+  color: white;
+}
+
+.mensaje_contador 
+{
+  margin: 10px 0 0 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+

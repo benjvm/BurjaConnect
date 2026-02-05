@@ -1,0 +1,53 @@
+.calendar {
+  --fc-width: 50vw;
+
+  --fc-border-color: #e5e7eb;
+  --fc-page-bg-color: #f9fafb;
+
+  --fc-button-bg-color: #2563eb;
+  --fc-button-border-color: #2563eb;
+  --fc-button-hover-bg-color: #1d4ed8;
+  --fc-button-active-bg-color: #1e40af;
+  --fc-button-text-color: white;
+
+  --fc-event-bg-color: #22c55e;
+  --fc-event-border-color: #16a34a;
+  --fc-event-text-color: white;
+
+  --fc-today-bg-color: rgba(47, 107, 235, 0.08);
+
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar .fc{
+  width: var(--fc-width);
+}
+
+/* Toolbar title */
+.my-calendar .fc-toolbar-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.fc-button {
+  border-radius: 15px;
+  padding: 6px 12px;
+}
+
+/* Calendar container */
+.fc {
+  background: rgb(252, 245, 238);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Events */
+.fc-event {
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,212 @@
+/*Entradas*/
+.grid_entrada
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto);  
+    gap: 10px;                              
+    justify-items: center;                 
+    padding: 40px ;
+    background-color: rgb(114, 114, 114);
+}
+/*Imagen*/
+.icono_entrada 
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    border: 0.5vh solid #e0e0e0;
+    border-radius: 1.5vh;
+    padding: 25px ; 
+    margin: 2vh;
+    background-color: white;
+    
+
+}
+.icono_entrada:hover 
+{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.icono_circular_entrada
+{
+    width: 250px;
+    height: 200px;
+    border-radius: 15%;
+    object-fit: cover;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+/*Titulo*/
+
+.titulo_icono_entrada
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+/*Contexto*/
+.contexto_icono_entrada
+{
+    font-size: 1rem;
+}
+
+/*Boton*/
+.boton_icono_entrada
+{
+    margin-bottom: 4vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    border: 0.4vh solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 2vh;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: rgb(241, 240, 240);
+    
+}  
+.boton_icono_entrada:hover 
+{
+    transform: scale(1.11);
+} 
+
+/*Buscador*/
+.buscador_entrada
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(114, 114, 114);
+}
+.input_busqueda 
+{
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-top: 2vh;
+}
+
+.input_busqueda:focus 
+{
+    border-color: #4a90e2;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+    width: 100%; 
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) 
+{
+    /* Barra de búsqueda*/
+    .buscador_entrada {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box; 
+        padding: 0 20px; 
+    }
+
+    .input_busqueda 
+    {
+        width: 100%; 
+        box-sizing: border-box; 
+        font-size: 14px;
+        padding: 10px 15px;
+        margin: 20px 0; 
+    }
+
+    /*Entrada*/
+    .grid_entrada 
+    {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 10px 20px; 
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+
+    .icono_entrada 
+    {
+        display: grid;
+        grid-template-columns: 40% 1fr; 
+        grid-template-rows: auto auto auto; 
+        width: 100%;
+        box-sizing: border-box; 
+        background-color: #f7f9fa; 
+        border: 1px solid #e0e0e0; 
+        border-radius: 20px; 
+        padding: 15px;
+        align-items: center; 
+        margin: 0;
+        column-gap: 15px; 
+    }
+
+    /* Imagen */
+    .icono_circular_entrada 
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4; 
+        width: 100%;
+        height: 100%;
+        min-height: 120px; 
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 0;
+    }
+    
+    .icono_circular_entrada:hover 
+    {
+        transform: none; 
+    }
+
+    /* Título */
+    .titulo_icono_entrada 
+    {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+        text-align: center;
+        align-self: end;
+    }
+
+    /* Contexto */
+    .contexto_icono_entrada 
+    {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        font-size: 0.8rem;
+        margin: 0 0 10px 0;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Botón */
+    .boton_icono_entrada 
+    {
+        grid-column: 2 / 3;
+        grid-row: 3;
+        margin: 0 auto; 
+    }
+    .boton_icono_entrada:hover 
+    {
+        transform: none;
+    } 
+}
