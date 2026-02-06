@@ -2,15 +2,9 @@ import "../../assets/styles/style_Mapa/Mapa.css";
 import "../../assets/styles/style_General/General.css";
 import { useState } from "react";
 
-export default function App() {
-  return (
-    <div>
-      <h2>Hola, Mundo</h2>
-    </div>
-  );
-}
 
-export function Mapa() {
+
+export  default function Mapa() {
   const [elegido, setElegido] = useState(true);
   const [sprite, setSprite] = useState("none");
   const [posicion, setPosicion] = useState({ top: "30%", left: "40%" });
