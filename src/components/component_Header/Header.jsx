@@ -34,7 +34,18 @@ export default function Header() {
                             <li>
                                 {location.pathname === '/Pg' ?
                                 (
-                                    <a href="#contacto">Contacto</a>
+                                    <span 
+                                        style={{ cursor: 'pointer' }} 
+                                        onClick= 
+                                        {() => 
+                                            {
+                                                const el = document.getElementById('contacto');
+                                                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }
+                                    >
+                                        Contacto
+                                    </span>
                                 ) :
                                 (
                                 <HashLink 
