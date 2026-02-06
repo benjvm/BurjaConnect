@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../assets/styles/style_Quiz/CuentaAtras.css';
 
 export default function CuentaAtras({ onTiempoTerminado, detener }) {
-  var TIEMPO_INICIAL = 5; 
+  var TIEMPO_INICIAL = 10; 
   
   var [tiempo, setTiempo] = useState(TIEMPO_INICIAL);
 
