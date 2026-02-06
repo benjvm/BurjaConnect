@@ -1,25 +1,13 @@
 import "../../assets/styles/style_Contacto/Contacto.css";
 import "../../assets/styles/style_General/General.css";
 
-export default function App() {
-  return (
-    <div>
-      <h2>Hola, Mundo</h2>
-    </div>
-  );
-}
-
-export function Contacto() {
+export default function Contacto() {
   const googlemapa = () => {
     return (
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.1306651285854!2d-0.4127982378494175!3d39.50859118096393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60450e6a6d9617%3A0xc7cfdd2071e113dd!2sAyuntamiento%20de%20Burjassot!5e0!3m2!1ses!2sus!4v1769772024103!5m2!1ses!2sus"
-        width="70%"
-        height="80%"
-        style={{ border: 0 }}
         allowFullScreen={true}
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     );
   };
