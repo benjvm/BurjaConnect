@@ -72,3 +72,8 @@
 .RenderPreguntas{
   margin-top: 15vh;
 }
+
+.RenderPreguntas #footer{
+  position: absolute;
+  bottom: 0;
+}
