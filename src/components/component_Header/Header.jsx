@@ -26,21 +26,10 @@ export default function Header() {
                     {/* MENÚ  */}
                     <nav className={`nav_container_header ${isMenuOpen ? 'active' : ''}`}>
                         <ul>
-                            <li>
-                                <Link to="/Pg">
-                                    <span className={location.pathname === '/Pg' ? 'activo' : ''}>
-                                        Inicio
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/QuizBurjassot">
-                                    <span className={location.pathname === '/QuizBurjassot' ? 'activo' : ''}>
-                                        Quiz Burjassot
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>Preguntas Frecuentes</li>
+                            <li><Link to="/Pg">Inicio</Link></li>
+                            <li><Link to="/QuizBurjassot">Conoce Burjassot</Link></li>
+                            <li>Eventos</li>
+                            <li><Link to="/PreguntasFrecuentes">FAQ</Link></li>
                             <li>Contacto</li>
                         </ul>
                     </nav>
