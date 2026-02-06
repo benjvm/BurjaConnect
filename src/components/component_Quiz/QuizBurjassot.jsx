@@ -88,6 +88,10 @@ export default function QuizBurjassot()
             detener={juegoTerminado}
           /> 
         </div>
+        <div className='mainDiv_0'>
+          <h1>Bienvenidos al Quiz</h1>
+          <button className='bt_mainDiv_0'>Iniciar</button>
+        </div>
         <div className="mainDiv">
           <h1>Quiz Burjassot</h1>
           
