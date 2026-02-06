@@ -22,6 +22,7 @@ export default function Grid_Entrada() {
     return (
         <>  
             <div className="buscador_entrada">
+                <h1 className='h1_titol'>Ultimas Noticias</h1>
                 <input 
                     type="text" 
                     placeholder="Buscar por título..." 
