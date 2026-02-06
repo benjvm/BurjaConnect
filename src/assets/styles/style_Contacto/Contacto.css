@@ -1,0 +1,109 @@
+#contacto
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+}
+
+#todo_contactos
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+#todo_contactos div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#contacto_txt
+{
+    align-items: start !important;
+    padding: 1rem;
+}
+
+#ayunt_googlemap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+
+#iconos_rss
+{
+    width: 50%;
+    gap: 1rem;
+}
+
+svg
+{
+    width: 20%;
+    height: 20%;
+}
+
+@media(max-width: 1280px) 
+{
+    #iconos_rss
+    {
+        display: flex !important;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: row !important;
+    }
+
+    #contacto
+    {
+        gap: 3rem;
+    }
+
+    #todo_contactos
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #ayunt_googlemap
+    {
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1280px)
+{
+    svg
+    {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+@media(min-width: 1281px) and (max-width: 1599px)
+{
+    #iconos_rss
+    {
+        display: flex !important;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: row !important;
+    }
+    #ayunt_googlemap
+    {
+        height: 100%;
+    }
+    svg
+    {
+        width: 40%;
+        height: 40%;
+    }
+}

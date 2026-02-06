@@ -1,0 +1,206 @@
+body
+{
+    margin: 0;
+}
+
+#padre_mapa
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    height: 80vh;
+    gap: 5vh;
+}
+
+#modal_juego
+{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    justify-content: space-between;
+    border-radius: 4px;
+    z-index: 4;
+    width: 70%;
+    height: 60%;
+    background-color: rgb(237, 240, 242, 0.7);
+}
+
+#txt_juego
+{
+    display: flex;
+    align-self: center;
+}
+
+#close
+{
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
+#img_historia
+{
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.componente-mapa
+{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 90%;
+}
+
+.componente-mapa div
+{
+    background-position: center;
+    background-size: cover;
+}
+
+#mapa_juego
+{
+    background-image: url(../../img/Plano-Burjassot.png);
+    background-color: #292828;
+    width: 80%;
+    height: 94%;
+    z-index: 1;
+}
+
+#overlay
+{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: gray;
+}
+
+#personaje
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgb(237, 240, 242, 0.7);
+}
+
+#selector
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+#title_pnj
+{
+    align-self: center;
+    font-size: 32px;
+}
+
+#chico, #chica
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+#chico div, #chica div
+{
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.btn_player
+{
+    width: 30%;
+    height: 10%;
+    background-color: #67CCB0;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #292828;
+}
+
+#player
+{
+    position: absolute;
+    width: 20%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    z-index: 3;
+    transition: all 0.4s ease;
+}
+
+#ubicacion1, #ubicacion2
+{
+    position: absolute;
+    width: 11%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    z-index: 2;
+    cursor: pointer;
+    border: 2px solid silver;
+}
+
+/* Estilo móvil */
+
+@media(max-width: 767px)
+{
+    #chico div, #chica div
+    {
+        width: 60%;
+        height: 60%;
+    }
+
+    #mapa_juego
+    {
+        width: 90%;
+        height: 90%;
+    }
+    #modal_juego
+    {
+        flex-direction: column-reverse;
+    }
+
+    #close
+    {
+        align-self: flex-end;
+    }
+
+    #img_historia
+    {
+        width: 100%;
+        height: 40%;
+    }
+
+    #ubicacion1, #ubicacion2
+    {
+        width: 25%;
+    }
+    #player
+    {
+        width: 35%;
+    }
+}
