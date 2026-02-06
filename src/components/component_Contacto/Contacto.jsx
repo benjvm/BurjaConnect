@@ -1,15 +1,7 @@
 import "../../assets/styles/style_Contacto/Contacto.css";
 import "../../assets/styles/style_General/General.css";
 
-export default function App() {
-  return (
-    <div>
-      <h2>Hola, Mundo</h2>
-    </div>
-  );
-}
-
-export function Contacto() {
+export default function Contacto() {
   const googlemapa = () => {
     return (
       <iframe
