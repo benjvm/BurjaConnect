@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '../../assets/styles/style_Header/Header.css';
-import {Link} from  'react-router'; 
+import { Link, useLocation } from 'react-router';
 
-export default function Header() 
-{
+export default function Header() {
     var [isMenuOpen, setIsMenuOpen] = useState(false);
+    var [active, setActive] = useState('/');
+    var location = useLocation();
 
-    var toggleMenu = () => 
-    {
+    var toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
@@ -19,7 +19,7 @@ export default function Header()
                     {/* LOGO */}
                     <div className='container_img_header'>
                         <a href="#" className="logo">
-                            <img src="./img/logo_.PNG" alt="Valencia" className='logo-img'/>
+                            <img src="./img/logo_.PNG" alt="Valencia" className='logo-img' />
                         </a>
                     </div>
 

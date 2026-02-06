@@ -109,10 +109,61 @@
 
 /*RESPONSIVE*/
 
+@media (min-width: 769px) and (max-width: 1025px) 
+{
+    .grid_entrada 
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px; 
+        padding: 30px;
+    }
+
+    .icono_entrada 
+    {
+        display: grid; 
+        grid-template-columns: 45% 1fr; 
+        grid-template-rows: auto auto auto; 
+        width: 100%; 
+        max-width: none; 
+        padding: 15px;
+        align-items: center; 
+        text-align: center; 
+        column-gap: 15px; 
+    }
+
+    .icono_circular_entrada 
+    {
+        grid-column: 1 / 2; 
+        grid-row: 1 / 4; 
+        width: 100%;
+        height: 100%; 
+        min-height: 150px; 
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 0; 
+    }
+
+    .titulo_icono_entrada 
+    {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        margin: 0 0 5px 0;
+        align-self: end; 
+    }
+
+    .contexto_icono_entrada 
+    {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        margin: 0 0 10px 0;
+    }
+
+}
+
 @media (max-width: 768px) 
 {
-    /* Barra de búsqueda*/
-    .buscador_entrada {
+    .buscador_entrada 
+    {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -129,7 +180,6 @@
         margin: 20px 0; 
     }
 
-    /*Entrada*/
     .grid_entrada 
     {
         grid-template-columns: 1fr; 
@@ -137,7 +187,6 @@
         padding: 10px 20px; 
         width: 100%;
         box-sizing: border-box;
-        
     }
 
     .icono_entrada 
@@ -156,7 +205,6 @@
         column-gap: 15px; 
     }
 
-    /* Imagen */
     .icono_circular_entrada 
     {
         grid-column: 1 / 2;
@@ -174,7 +222,6 @@
         transform: none; 
     }
 
-    /* Título */
     .titulo_icono_entrada 
     {
         grid-column: 2 / 3;
@@ -185,7 +232,6 @@
         align-self: end;
     }
 
-    /* Contexto */
     .contexto_icono_entrada 
     {
         grid-column: 2 / 3;
@@ -198,15 +244,61 @@
         overflow: hidden;
     }
 
-    /* Botón */
     .boton_icono_entrada 
     {
         grid-column: 2 / 3;
         grid-row: 3;
-        margin: 0 auto; 
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
+
     .boton_icono_entrada:hover 
     {
         transform: none;
     } 
+}
+
+@media (max-width: 480px) 
+{
+    .grid_entrada 
+    {
+        padding: 10px; 
+    }
+
+    .icono_entrada 
+    {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .icono_circular_entrada 
+    {
+        grid-column: 1;
+        grid-row: 1;
+        width: 150px; 
+        height: 150px;
+        margin: 0 auto 15px auto; 
+    }
+
+    .titulo_icono_entrada, 
+    .contexto_icono_entrada, 
+    .boton_icono_entrada 
+    {
+        grid-column: 1;
+        grid-row: auto; 
+    }
+
+    .titulo_icono_entrada 
+    {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .contexto_icono_entrada 
+    {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
 }

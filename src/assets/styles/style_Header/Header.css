@@ -9,6 +9,12 @@ header
     z-index: 100; 
 }
 
+.activo
+{
+    color: black;
+    font-weight: bold;
+}
+
 .header-container 
 {
     display: flex;
@@ -125,6 +131,36 @@ a
 
 /* RESPONSIVE */
 
+/* --- TUS MEDIA QUERIES ACTUALIZADAS Y COMPLETAS --- */
+
+/* ORDENADORES / PANTALLAS GRANDES (+1025px) */
+@media (min-width: 1025px) {
+    .header-container {
+        padding: 10px 60px; /* Más aire en los laterales para pantallas anchas */
+    }
+
+    .nav_container_header ul {
+        gap: 5vh; /* Aumenta el espacio entre enlaces para llenar mejor el espacio */
+    }
+}
+
+/* TABLETS HORIZONTAL (De 901px a 1024px) - Antes del menú hamburguesa */
+@media (min-width: 901px) and (max-width: 1024px) {
+    .header-container {
+        padding: 10px 20px;
+    }
+
+    .nav_container_header ul {
+        gap: 2vh; /* Reduce el espacio para que el menú quepa sin chocarse con el logo */
+        font-size: 14px; /* Ajuste ligero de fuente si es necesario */
+    }
+
+    .logo-img {
+        height: 6vh; /* Reduce ligeramente el logo para equilibrar */
+    }
+}
+
+/* TABLETS VERTICAL / MÓVIL (Tus valores originales: Menú Hamburguesa) */
 @media (max-width: 900px) 
 {
     .header-container 
@@ -132,13 +168,10 @@ a
         padding: 10px 20px; 
     }
 
-    
     .burger-menu 
     {
         display: flex; 
-        width: 60%;
         height: 60%;
-
     }
 
     .nav_container_header 
@@ -186,5 +219,42 @@ a
     {
         flex: 1; 
         justify-content: flex-end;
+    }
+}
+/*RESPONSIVE*/
+
+@media (max-width: 480px) 
+{
+    .header-container 
+    {
+        padding: 10px 15px; 
+        height: 70px;
+    }
+
+    .nav_container_header 
+    {
+        top: 70px; 
+    }
+
+    .logo-img 
+    {
+        height: 40px; 
+    }
+
+    .burger-menu 
+    {
+        width: 35px;
+        height: 35px;
+        padding: 8px; 
+    }
+
+    .idiomas_header img 
+    {
+        width: 25px; 
+    }
+    
+    .right-section 
+    {
+        gap: 10px;
     }
 }

@@ -14,13 +14,15 @@ body
     justify-content: center;
     padding: 20px;
 }
-.container_Qz
+
+.container_Qz 
 {
     flex-wrap: wrap;
     min-height: 100vh;
     display: flex;
     align-content: center;
-    margin-left: 10vh;;
+    margin-left: 10vh;
+    ;
 }
 
 .mainDiv 
@@ -134,4 +136,117 @@ body
 .result h2 
 {
     font-size: 1.5em;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 1025px) 
+{
+    .mainDiv {
+        max-width: 700px; 
+        min-height: 450px;
+    }
+
+    .mainDiv h1 
+    {
+        font-size: 2.2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) 
+{
+    .container_Qz 
+    {
+        margin-left: 5vh; 
+    }
+
+    .mainDiv 
+    {
+        max-width: 550px;
+    }
+
+    .answerDiv 
+    {
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .container 
+    {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container_Qz 
+    {
+        margin-left: 0;
+        justify-content: center;
+        min-height: 0vh;
+    }
+
+    .mainDiv 
+    {
+        max-width: 90%;
+        padding: 18px;
+    }
+
+    .mainDiv h1 
+    {
+        font-size: 1.7em;
+    }
+
+    .question 
+    {
+        font-size: 1.1em;
+    }
+
+    .answerDiv 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .answer 
+    {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .nextButton 
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .mainDiv 
+    {
+        padding: 15px;
+    }
+
+    .mainDiv h1 
+    {
+        font-size: 1.5em;
+    }
+
+    .question 
+    {
+        font-size: 1em;
+    }
+
+    .answer 
+    {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .nextButton 
+    {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
