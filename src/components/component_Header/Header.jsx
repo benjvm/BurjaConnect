@@ -27,7 +27,7 @@ export default function Header()
                     <nav className={`nav_container_header ${isMenuOpen ? 'active' : ''}`}>
                         <ul>
                             <li><Link to="/Pg">Inicio</Link></li>
-                            <li><Link to="/QuizBurjassot">Conoce Burjassot</Link></li>
+                            <li><Link to="/QuizBurjassot">Quiz</Link></li>
                             <li>Eventos</li>
                             <li><Link to="/PreguntasFrecuentes">FAQ</Link></li>
                             <li>Contacto</li>

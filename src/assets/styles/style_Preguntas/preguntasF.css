@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  width: 50vw;
   margin: auto;
 }
 
@@ -52,8 +52,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
   margin-bottom: 5vh;
+}
+
+.title h1{
+  font-size: 55px;
+}
+
+.title p{
+  font-size: 20px;
 }
 
 .title p, h1{
@@ -69,11 +76,13 @@
   transform: rotate(180deg);
 }
 
-.RenderPreguntas{
-  margin-top: 15vh;
-}
-
 .RenderPreguntas #footer{
   position: absolute;
   bottom: 0;
 }
+
+.preguntasBody{
+  height: 75vh;
+  margin-top: 15vh;
+}
+

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../../assets/styles/style_Quiz/QuizBurjassot.css';
 import CuentaAtras from './CuentaAtras';
 import Header from '../component_Header/Header';
-import { Footer } from '../component_Footer/Footer';
+import Footer from '../component_Footer/Footer';
 
 var preguntas = [
   {
