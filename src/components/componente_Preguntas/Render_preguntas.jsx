@@ -1,5 +1,5 @@
 import PreguntasFrecuentes, {PreguntasTitle} from './PreguntasFrecuentes.jsx'
-import Header from '../component_Header/Header.jsx'
+import Header from '../component_Header/Header.jsx';
 import Footer from '../component_Footer/Footer.jsx';
 
 export default function RenderPreguntas() {
