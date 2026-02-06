@@ -7,8 +7,9 @@ NPM:
 npm install @fullcalendar/react   
 npm install @fullcalendar/daygrid   
 npm install react-player     
-npm install react-router-dom   
+npm install react-router-dom  
 npm i react-router          
+npm install react-router-hash-link         
 
 ## Colaboradores      
 Desarrollado por tres estudiantes de Desarrollo de Aplicaciones Web (DAW),        

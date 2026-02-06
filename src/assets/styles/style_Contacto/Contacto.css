@@ -84,6 +84,10 @@ iframe
         width: 100%;
         gap: 1rem;
     }
+    iframe
+    {
+        height: 40vh;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1280px)

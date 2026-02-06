@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../assets/styles/style_Header/Header.css';
 import { Link, useLocation } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Header() {
     var [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,20 @@ export default function Header() {
                             <li><Link to="/QuizBurjassot">Quiz</Link></li>
                             <li>Eventos</li>
                             <li><Link to="/PreguntasFrecuentes">FAQ</Link></li>
-                            <li>Contacto</li>
+                            <li>
+                                {location.pathname === '/Pg' ?
+                                (
+                                    <a href="#contacto">Contacto</a>
+                                ) :
+                                (
+                                <HashLink 
+                                    smooth to="/#contacto" 
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                    className="nav-link">
+                                    Contacto
+                                </HashLink>
+                                )}
+                            </li>
                         </ul>
                     </nav>
 
