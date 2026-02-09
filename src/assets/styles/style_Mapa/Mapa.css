@@ -3,14 +3,20 @@ body
     margin: 0;
 }
 
+#mapa_container 
+{
+    overflow: hidden;
+}
+
 #padre_mapa
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    width: 100%;
     height: 80vh;
+    margin: 6rem 0 0 0;
     gap: 5vh;
 }
 
@@ -166,19 +172,25 @@ body
 
 /* Estilo móvil */
 
-@media(max-width: 767px)
+@media(max-width: 1280px)
 {
+    #padre_mapa
+    {
+        height: 85vh;
+    }
+    
     #chico div, #chica div
     {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
 
     #mapa_juego
     {
-        width: 90%;
-        height: 90%;
+        width: 92%;
+        height: 92%;
     }
+    
     #modal_juego
     {
         flex-direction: column-reverse;
@@ -195,12 +207,16 @@ body
         height: 40%;
     }
 
-    #ubicacion1, #ubicacion2
-    {
-        width: 25%;
-    }
     #player
     {
         width: 35%;
+    }
+}
+
+@media(max-width: 900px)
+{
+    #ubicacion1, #ubicacion2
+    {
+        width: 25%;
     }
 }

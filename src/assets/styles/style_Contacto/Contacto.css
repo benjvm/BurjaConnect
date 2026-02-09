@@ -51,7 +51,7 @@
     height: 20%;
 }
 
-iframe
+#ayunt_googlemap iframe
 {
     width: 70%;
     height: 25vh;
@@ -84,9 +84,9 @@ iframe
         width: 100%;
         gap: 1rem;
     }
-    iframe
+    #ayunt_googlemap iframe
     {
-        height: 40vh;
+        height: 45vh;
     }
 }
 
@@ -97,7 +97,8 @@ iframe
         width: 10%;
         height: 10%;
     }
-    p
+
+    #contacto p
     {
         font-size: 20px;
     }
@@ -116,6 +117,12 @@ iframe
     {
         height: 100%;
     }
+
+    #ayunt_googlemap iframe
+    {
+        height: 40vh;
+    }
+
     #iconos_rss svg
     {
         width: 40%;

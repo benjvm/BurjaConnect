@@ -1,10 +1,10 @@
 import "../../assets/styles/style_Mapa/Mapa.css";
 import "../../assets/styles/style_General/General.css";
+import Header from "../component_Header/Header";
+import Footer from "../component_Footer/Footer";
 import { useState } from "react";
 
-
-
-export  default function Mapa() {
+export default function Mapa() {
   const [elegido, setElegido] = useState(true);
   const [sprite, setSprite] = useState("none");
   const [posicion, setPosicion] = useState({ top: "30%", left: "40%" });
@@ -43,18 +43,21 @@ export  default function Mapa() {
   };
 
   return (
-    <div id="padre_mapa">
-      <div className="componente-mapa" id="mapa_juego" onClick={hacerClic}>
-        <div id="overlay" style={{display: difuminado}}></div>
-        {elegido ? <Jugador /> : <></>}
-        {llegada ? <Historia imagen={ image } texto= { text } cerrar = {()=> {setLlegada(false), setDifuminado('none')}}/> : <></>}
-        <div id="player" style={{ backgroundImage: sprite, top: posicion.top, left: posicion.left }}
-        ></div>
-        <div id="ubicacion1" style={{ top: "60%", left: "65%", backgroundImage: 'url(/img/Museo_Burja.jpg)' }}></div>
-        <div id="ubicacion2" style={{ top: "20%", left: "35%", backgroundImage: 'url(/img/Iglesia-Burja.jpg)' }}></div>
+    <div id="mapa_container">
+      <Header />
+      <div id="padre_mapa">
+        <div className="componente-mapa" id="mapa_juego" onClick={hacerClic}>
+          <div id="overlay" style={{display: difuminado}}></div>
+          {elegido ? <Jugador /> : <></>}
+          {llegada ? <Historia imagen={ image } texto= { text } cerrar = {()=> {setLlegada(false), setDifuminado('none')}}/> : <></>}
+          <div id="player" style={{ backgroundImage: sprite, top: posicion.top, left: posicion.left }}
+          ></div>
+          <div id="ubicacion1" style={{ top: "60%", left: "65%", backgroundImage: 'url(/img/Museo_Burja.jpg)' }}></div>
+          <div id="ubicacion2" style={{ top: "25%", left: "25%", backgroundImage: 'url(/img/Iglesia-Burja.jpg)' }}></div>
+        </div>
       </div>
+      <Footer />
     </div>
-
   );
 }
 
