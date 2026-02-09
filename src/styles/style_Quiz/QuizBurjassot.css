@@ -16,8 +16,8 @@
     display: flex;
     align-content: center;
     margin-left: 10vh;
-    ;
 }
+
 .mainDiv_0
 {
     display: flex;
@@ -48,6 +48,7 @@
     margin-top: 4vh;
 
 }
+
 .bt_mainDiv_0:hover
 {
     background-color: rgb(25, 70, 200);
