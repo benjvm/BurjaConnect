@@ -29,7 +29,7 @@
 .icono_entrada:hover 
 {
     transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .icono_circular_entrada
 {
@@ -72,10 +72,16 @@
     color: rgb(241, 240, 240);
     
 }  
-.boton_icono_entrada:hover 
+ 
+/*H1*/
+.h1_titol
 {
-    transform: scale(1.11);
-} 
+    font-size: 8vh;
+    color: white;
+    margin-top: 2vh;
+    
+    padding: 2vh;
+}
 
 /*Buscador*/
 .buscador_entrada
