@@ -28,7 +28,7 @@ export default function Header() {
                         <ul>
                             <li><Link to="/Pg">Inicio</Link></li>
                             <li><Link to="/QuizBurjassot">Quiz</Link></li>
-                            <li>Eventos</li>
+                            <li><Link to="/Mapa">Mapa</Link></li>
                             <li><Link to="/PreguntasFrecuentes">FAQ</Link></li>
                             <li>Contacto</li>
                         </ul>
