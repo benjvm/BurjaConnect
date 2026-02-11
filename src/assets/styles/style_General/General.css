@@ -4,6 +4,12 @@
     src: url(../DMSans-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face
+{
+    font-family: 'Chewy';
+    src: url(../Chewy-Regular.ttf);
+}
+
 /* Font family para todos los textos*/
 *
 {

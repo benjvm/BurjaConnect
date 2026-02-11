@@ -115,6 +115,7 @@ export default function QuizBurjassot()
 
   return (
     <div>
+      <h1 id='title_quiz'>Trivial Burjassot</h1>
       <div className="container">
         <Header />
         {!empezar ? (

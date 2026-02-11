@@ -18,8 +18,9 @@
 }
 
 .titulo_bj {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 55px;
+  font-weight: lighter;
+  font-family: 'Chewy';
   color: #333;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -146,4 +147,12 @@
     {
         padding: 10px; 
     }
+}
+
+@media(min-width: 1000px) and (max-width: 1030px)
+{
+  .titulo_bj
+  {
+    margin-top: 5vh;
+  }
 }
