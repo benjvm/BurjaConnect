@@ -22,7 +22,7 @@ export default function Mapa() {
         setImagen(evento.target.style.backgroundImage);
         if(evento.target.id == 'ubicacion1')
         {
-          setTexto('Museo de Historia Natural');
+          setTexto('El Museu de Historia Natural de la Universitat de València, oficialmente llamado Museo de la Universidad de Valencia de Historia Natural, es una institución que tiene su origen más remoto en el antiguo Gabinete o Museo de Historia Natural de la Universidad de Valencia existente desde la segunda mitad del siglo XIX');
         }
         else if (evento.target.id == 'ubicacion2')
         {
