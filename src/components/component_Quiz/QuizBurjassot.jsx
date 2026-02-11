@@ -6,19 +6,54 @@ import Footer from '../component_Footer/Footer';
 
 var preguntas = [
   {
-    pregunta: "¿Cuál es la capital de España?",
-    opciones: ["Valencia", "Santander", "Barcelona", "Madrid"],
-    correcta: 3
-  },
-  {
-    pregunta: "¿Mejor serie de todos los tiempos?",
-    opciones: ["The Simpsons", "Breaking Bad", "Stranger Things", "The Boys"],
+    pregunta: "¿Cuál es el monumento más famoso de Burjassot? (antiguos depósitos de trigo)",
+    opciones: ["El Micalet", "Los Silos", "Torres de Serranos", "El Castillo"],
     correcta: 1
   },
   {
-    pregunta: "¿Cuál de las siguientes marcas es de Japón?",
-    opciones: ["BYD", "Hyundai", "Subaru", "Chery"],
+    pregunta: "¿Qué famoso poeta valenciano nació en Burjassot?",
+    opciones: ["Vicent Andrés Estellés", "Blasco Ibáñez", "Ausiàs March", "Sorolla"],
+    correcta: 0
+  },
+  {
+    pregunta: "¿Quién es el patrón de las fiestas de agosto?",
+    opciones: ["San Vicente", "San José", "San Roque", "San Miguel"],
     correcta: 2
+  },
+  {
+    pregunta: "¿Qué universidad tiene su Campus de Ciencias aquí?",
+    opciones: ["Politécnica (UPV)", "Católica", "CEU", "Universidad de Valencia (UV)"],
+    correcta: 3
+  },
+  {
+    pregunta: "¿Cómo se llama el parque famoso por su tren tripulado?",
+    opciones: ["Viveros", "La Granja", "Parque de Cabecera", "El Retiro"],
+    correcta: 1
+  },
+  {
+    pregunta: "¿A qué comarca pertenece el municipio?",
+    opciones: ["L'Horta Nord", "Camp de Túria", "L'Horta Sud", "Ribera Alta"],
+    correcta: 0
+  },
+  {
+    pregunta: "¿Qué acto tradicional se celebra donde 'ruedan' al santo?",
+    opciones: ["La Tomatina", "La Cremà", "La Rodà", "La Muixeranga"],
+    correcta: 2
+  },
+  {
+    pregunta: "¿Qué es actualmente el edificio conocido como 'El Castell'?",
+    opciones: ["El Ayuntamiento", "Un Colegio Mayor", "Una Biblioteca", "Un Museo"],
+    correcta: 1
+  },
+  {
+    pregunta: "¿Cuál es el gentilicio de los habitantes?",
+    opciones: ["Burjassoteros", "Burjassotanos", "Burjassotenses", "Burjassotís"],
+    correcta: 2
+  },
+  {
+    pregunta: "¿Qué elemento de piedra cubre las entradas de Los Silos?",
+    opciones: ["Tejas", "Chimeneas", "Fuentes", "Pilones (tapas)"],
+    correcta: 3
   }
 ];
 

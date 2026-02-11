@@ -180,6 +180,12 @@
     {
         font-size: 2.2em;
     }
+
+    .mainDiv_0 
+    {
+        max-width: 700px; 
+        min-height: 450px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) 
@@ -190,6 +196,11 @@
     }
 
     .mainDiv 
+    {
+        max-width: 550px;
+    }
+
+    .mainDiv_0
     {
         max-width: 550px;
     }
@@ -216,6 +227,12 @@
     }
 
     .mainDiv 
+    {
+        max-width: 90%;
+        padding: 18px;
+    }
+
+    .mainDiv_0
     {
         max-width: 90%;
         padding: 18px;
@@ -257,7 +274,16 @@
         padding: 15px;
     }
 
+    .mainDiv_0
+    {
+        padding: 15px;
+    }
+
     .mainDiv h1 
+    {
+        font-size: 1.5em;
+    }
+    .mainDiv_0 h1 
     {
         font-size: 1.5em;
     }
