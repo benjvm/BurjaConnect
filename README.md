@@ -10,6 +10,9 @@ El proyecto consiste en un Sitio Web diseñado para el uso de jóvenes de Burjas
 - Google Maps API
 - FullCallendar API
 
+## Puedes hecharle un vistazo aquí 👇
+
+
 ## Dependencias necesarias para un correcto funcionamiento
 NPM:     
 - npm install @fullcalendar/react   
