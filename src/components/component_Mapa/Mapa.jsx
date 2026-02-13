@@ -26,7 +26,7 @@ export default function Mapa() {
         }
         else if (evento.target.id == 'ubicacion2')
         {
-          setTexto('Iglesia de San Miguel Arcángel');
+          setTexto('La Iglesia de San Miguel Arcángel fue edificada en 1767 y destaca en su interior una serie de grandes esculturas realizadas en estuco blanco, de tres metros de altura y que representan a los doce apóstoles, a Pablo y a Bernabé y dos arcángeles Rafael y Gabriel.');
         }
         setLlegada(true);
         setDifuminado('flex');
@@ -90,9 +90,10 @@ function Historia({imagen, texto, cerrar}) {
   return (
     <div id="modal_juego">
       <div id="img_historia" style={{backgroundImage: imagen }}></div>
-      <p id="txt_juego">
-        { texto }
-      </p>
+        <p id="txt_juego">
+          { texto }
+        </p>
+
       <svg onClick={cerrar} id="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
