@@ -11,7 +11,7 @@ El proyecto consiste en un Sitio Web diseñado para el uso de jóvenes de Burjas
 - FullCallendar API
 
 ## Puedes hecharle un vistazo aquí 👇
-
+https://burjaconnect.netlify.app/
 
 ## Dependencias necesarias para un correcto funcionamiento
 NPM:     
