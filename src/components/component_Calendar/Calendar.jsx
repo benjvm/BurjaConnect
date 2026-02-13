@@ -2,7 +2,7 @@ import { useState } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import esLocale from '@fullcalendar/core/locales/es';
-import '../../assets/styles/style_Calendar/Calendar.css';
+import '../../assets/styles/style_Calendar/calendar.css';
 
 export default function CalendarView() {
   const [selectedEvent, setSelectedEvent] = useState(null);
